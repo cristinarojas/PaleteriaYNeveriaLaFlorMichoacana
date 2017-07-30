@@ -1,0 +1,9 @@
+// Pallete colors for the Application
+$redLight: #C1392D;
+$pinkLight: #EE9EAD;
+
+// Mixings
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

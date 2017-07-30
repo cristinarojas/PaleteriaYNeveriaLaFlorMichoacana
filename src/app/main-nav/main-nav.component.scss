@@ -1,0 +1,39 @@
+@import '../../assets/variable.colors.scss';
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 5.75rem;
+  background-color: transparent;
+  ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      a {
+        @include font-size(1);
+        line-height: 5.75rem;
+        padding: 1rem 1.5rem;
+        opacity: 1;
+        text-decoration: none;
+        transition: color .15s ease-in-out;
+        color: $redLight;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $pinkLight;
+          cursor: pointer;
+        }
+
+        img {
+          width: 125px;
+        }
+      }
+    }
+  }
+}
+
+.container-fluid {
+  border: 1px solid green;
+}
