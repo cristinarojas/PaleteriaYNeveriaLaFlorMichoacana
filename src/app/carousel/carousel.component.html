@@ -1,6 +1,6 @@
 <ngb-carousel>
   <ng-template ngbSlide *ngFor="let item of carouselData">
-    <img src="assets/images/{{ item.image }}" alt="Random first slide">
+    <img src="assets/images/{{ item.image }}" alt="{{ item.alt }}">
     <div class="carousel-caption">
       <p>{{ item.description }}</p>
     </div>
