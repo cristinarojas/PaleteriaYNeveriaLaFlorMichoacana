@@ -1,23 +1,8 @@
 <ngb-carousel>
-  <ng-template ngbSlide>
-    <img src="assets/images/ice-cream-1.jpg" alt="Random first slide">
+  <ng-template ngbSlide *ngFor="let item of carouselData">
+    <img src="assets/images/{{ item.image }}" alt="Random first slide">
     <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img src="assets/images/ice-cream-2.jpg" alt="Random second slide">
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img src="assets/images/ice-cream-3.jpg" alt="Random third slide">
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <p>{{ item.description }}</p>
     </div>
   </ng-template>
 </ngb-carousel>
