@@ -1,0 +1,21 @@
+@import '../../assets/variable.colors.scss';
+
+.welcome-text {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: $blueLight;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 30px;
+    color: $blueLight;
+  }
+}

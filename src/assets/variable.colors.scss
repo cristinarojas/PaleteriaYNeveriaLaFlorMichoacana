@@ -1,7 +1,13 @@
 // Pallete colors for the Application
 $redLight: #C1392D;
+$pink: #D9888D;
 $pinkLight: #EE9EAD;
 $blueLight: #51B2B8;
+
+// Mdiaqueries
+$ipadPortrait: "only screen and (max-width : 1024px)";
+$ipadLandscape: "only screen and (max-width : 768px)";
+
 
 // Mixings
 @mixin font-size($sizeValue: 1.6) {

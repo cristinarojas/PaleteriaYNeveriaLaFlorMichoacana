@@ -19,8 +19,21 @@
     font-weight: 600;
     text-transform: capitalize;
 
+    @media #{$ipadPortrait} {
+      @include font-size(1);
+    }
+
+    @media #{$ipadLandscape} {
+      @include font-size(0.5);
+    }
+
     p {
-      padding-bottom: 5rem;
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+
+      @media #{$ipadPortrait} {
+        padding-bottom: 0rem;
+      }
     }
   }
 }
