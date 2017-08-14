@@ -19,3 +19,33 @@
     color: $blueLight;
   }
 }
+
+.special-product {
+  height: 500px;
+  width: 100%;
+  background-color: $pink-special;
+
+  img {
+    width: 45%;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+
+  .special-product-text {
+    width: 50%;
+    display: inline;
+    float: right;
+
+    h2 {
+      @include font-size(4);
+      margin-top: 20%;
+      text-transform: uppercase;
+      color: $blueLight;
+    }
+
+    span {
+      color: $blueLight;
+      @include font-size(2);
+    }
+  }
+}

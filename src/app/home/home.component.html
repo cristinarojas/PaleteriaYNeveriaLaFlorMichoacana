@@ -1,5 +1,12 @@
 <app-carousel></app-carousel>
 <section class="welcome-text">
   <h1>¡Ven a visitarnos y conoce nuestra variedad de productos!</h1>
-  <p>Quedaras encanto con la variedad de paletas y helados</p>
+</section>
+<section class="special-product" *ngFor="let item of homeData" >
+  <img src="assets/images/{{ item.image }}">
+  <div class="special-product-text">
+    <h2> {{ item.title }}</h2>
+    <span>{{ item.descriptionone }}</span>
+    <span>{{ item.descriptiontwo }}</span>
+  </div>
 </section>
