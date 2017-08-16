@@ -2,11 +2,32 @@
 <section class="welcome-text">
   <h1>¡Ven a visitarnos y conoce nuestra variedad de productos!</h1>
 </section>
-<section class="special-product" *ngFor="let item of homeData" >
+
+<section class="special-product" *ngFor="let item of productOneHome" >
   <img src="assets/images/{{ item.image }}">
   <div class="special-product-text">
-    <h2> {{ item.title }}</h2>
+    <h2>{{ item.title }}</h2>
     <span>{{ item.descriptionone }}</span>
     <span>{{ item.descriptiontwo }}</span>
   </div>
 </section>
+
+<section class="special-product-second" *ngFor="let item of productTwoHome">
+  <div class="special-product-text">
+    <h2>{{ item.title }}</h2>
+    <span>{{ item.descriptionone }}</span>
+    <span>{{ item.descriptiontwo }}</span>
+  </div>
+  <img src="assets/images/{{ item.image }}">
+</section>
+
+<section class="special-product" *ngFor="let item of productThreeHome" >
+  <img src="assets/images/{{ item.image }}">
+  <div class="special-product-text">
+    <h2>{{ item.title }}</h2>
+    <span>{{ item.descriptionone }}</span>
+    <span>{{ item.descriptiontwo }}</span>
+  </div>
+</section>
+
+<app-footer></app-footer>

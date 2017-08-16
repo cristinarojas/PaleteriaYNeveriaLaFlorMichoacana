@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import homeData from '../../assets/data/homeData';
+import productOneHome from '../../assets/data/productOneHome';
+import productTwoHome from '../../assets/data/productTwoHome';
+import productThreeHome from '../../assets/data/productThreeHome';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +10,16 @@ import homeData from '../../assets/data/homeData';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public homeData;
+  public productOneHome;
+  public productTwoHome;
+  public productThreeHome;
 
   constructor() { }
 
   ngOnInit() {
-    this.homeData = homeData;
+    this.productOneHome = productOneHome;
+    this.productTwoHome = productTwoHome;
+    this.productThreeHome = productThreeHome;
   }
 
 }
